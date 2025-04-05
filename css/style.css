@@ -1,6 +1,6 @@
 body {
 	font-size: 14px;
-    color: #333;
+    color: #121212;
     background-color: #fff;
     letter-spacing: 1px;
 }
@@ -70,8 +70,8 @@ body {
 
 .skillsSection,
 .contactSection {
-	background-color: #113768;
-	color: #fff;
+	background-color: #121212;
+	color: #B8860B;
 }
 
 .skill{
@@ -88,7 +88,7 @@ body {
 }
 .world{
 	text-align: center;
-	color: #fff;
+	color: #B8860B;
 	font-family: 'Calistoga', cursive;
 
 
@@ -101,7 +101,7 @@ body {
 	
 }
 .chart .percent {
-	color:white;
+	color:#fff;
 	line-height: 152px;
 	display: inline-block;
 	font-size: 35px;
@@ -120,7 +120,7 @@ body {
 	position: relative;
 	padding: 50px 15px 35px;
 	text-align: center;
-	border: 2px solid #113768;
+	border: 2px solid #121212;
 	border-top: none;
 }
 
@@ -130,7 +130,7 @@ body {
 	position: absolute;
 	top: 0px;
 	width: 30%;
-	border-bottom: 2px solid #113768;
+	border-bottom: 2px solid #121212;
 }
 .squareInnerContainer:before {
 	right: 0px;
@@ -145,7 +145,7 @@ body {
 	font-size: 56px;
 	margin-bottom: 10px;
 	font-weight: 400;
-	color: #113768;
+	color: #B8860B;
 
 }
 .squareContent h3 {
@@ -163,27 +163,27 @@ body {
     height: 60px;
     font-size: 45px;
     margin-left: -20%;
-    color: #113768;
+    color: #121212;
 }
 
 .contactButton {
-	color: #fff;
+	color: #B8860B;
     padding: 15px 20px;
     display: inline-block;
     margin-top: 20px;
-    border: 1px solid #fff;
+    border: 1px solid #B8860B;
     border-radius: 2px;
 
 }
 .contactButton:hover {
 	text-decoration: none;
-	color: #ab7aff;
+	color: #B8860B;
 	background-color:white;
 }
 
 .filter a {
-	color: #113768;
-	border: 1px solid #bdc3c7;
+	color: #121212;
+	border: 1px solid #B8860B;
 	padding: 10px 18px;
 	display: block;
 }
@@ -194,9 +194,9 @@ body {
 }
 
 .filter .current {
-	background-color:#113768;
-	border-color:#001a33;
-	color: #fff;
+	background-color:#121212;
+	border-color:#B8860B;
+	color: #B8860B;
 }
 
 .filter {
@@ -209,7 +209,7 @@ body {
 	padding-bottom: 40px;
 	width: 100%;
 	font-family: 'Calistoga', cursive;
-	color:#113768;
+	color:##B8860B;
 }
 
 .items li {
@@ -327,8 +327,8 @@ body {
 	padding: 0;
 }
 .copyrightSection {
-	background-color:#001a33;
-	color: #fff;
+	background-color:#121212;
+	color: #B8860B;
 	padding: 30px 5px;
 	font-family: 'Calistoga', cursive;
 	
@@ -339,7 +339,7 @@ body {
 }
 
 #navigation {
-	background-color:#001a33;
+	background-color:#121212;
 	padding: 20px 10px;
 	z-index: 100;
 	width: 100%;
@@ -351,13 +351,13 @@ body {
 }
 
 #navigation li a {
-	color: #fff;
+	color: #B8860B;
 }
 
 
 .navbar-brand,
 .navbar-brand:hover {
-	color: #fff;
+	color: #B8860B;
 }
 
 .navbar-toggler-icon {
@@ -387,7 +387,7 @@ body {
 }
 .logo{
 	text-align: center;
-	color: #fff;
+	color:#B8860B;
 	padding-right:100px ;
 	font-family: 'Calistoga', cursive;
 	
@@ -397,7 +397,7 @@ body {
 
 	text-align: center;
 	font-family: 'Calistoga', cursive;
-	color: #113768;
+	color: #B8860B;
 }
 .mail{
 	text-align: center;
@@ -407,4 +407,16 @@ body {
 .kxtechical{
 
 	font-family: 'Calistoga', cursive;
+}
+
+.text{
+	
+	font-family: 'Calistoga', cursive;
+	color: #fff;
+}
+
+.text1{
+	text-align: center;
+	font-family: 'Calistoga', cursive;
+	color: #121212;
 }
