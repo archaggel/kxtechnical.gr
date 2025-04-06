@@ -386,7 +386,7 @@ body {
 	background: url(../img/loader.gif) center center no-repeat;
 }
 .logo{
-	text-align: center;
+	text-align: left;
 	color:#B8860B;
 	padding-right:100px ;
 	font-family: 'Calistoga', cursive;
