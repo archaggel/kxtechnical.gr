@@ -517,3 +517,16 @@ body {
     font-family: 'Inter', sans-serif;
     color: #121212;
 }
+
+.squareContent h2 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3px;
+}
+
+.counterSuffix {
+    font-size: 35px;
+    font-weight: 400;
+    color: #B8860B;
+}
