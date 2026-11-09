@@ -1,162 +1,210 @@
+
+/* =========================================
+   1. ΓΕΝΙΚΕΣ ΡΥΘΜΙΣΕΙΣ ΙΣΤΟΣΕΛΙΔΑΣ
+   ========================================= */
+
 body {
-	font-size: 14px;
-    color: #121212;
-    background-color: #fff;
-    letter-spacing: 1px;
+    font-size: 14px;             /* Βασικό μέγεθος γραμματοσειράς */
+    color: #121212;              /* Βασικό χρώμα κειμένου */
+    background-color: #fff;      /* Λευκό φόντο */
+    letter-spacing: 1px;         /* Απόσταση μεταξύ χαρακτήρων */
 }
+
+/* =========================================
+   2. OVERLAY - ΣΚΟΥΡΥΝΣΗ SLIDESHOW
+   ========================================= */
 
 .overlay {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 3;
-	background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;                 /* Καλύπτει όλο το πλάτος */
+    height: 100%;                /* Καλύπτει όλο το ύψος του γονέα */
+    position: absolute;          /* Τοποθέτηση πάνω από το περιεχόμενο */
+    z-index: 3;                  /* Σειρά εμφάνισης */
+    background-color: rgba(0, 0, 0, 0.4); /* Μαύρη διαφάνεια 40% */
 }
 
+/* =========================================
+   3. ΠΛΟΗΓΗΣΗ SLIDESHOW
+   ========================================= */
+
 .slides-navigation {
-	z-index: 6;
+    z-index: 6;                  /* Τα κουμπιά πάνω από το overlay */
 }
 
 .slides-navigation .prev,
 .slides-navigation .next {
-	width: 47px;
-	height: 47px;
-	background-size: cover;
-	background-repeat: no-repeat;
+    width: 47px;                 /* Πλάτος κουμπιών */
+    height: 47px;                /* Ύψος κουμπιών */
+    background-size: cover;      /* Κάλυψη όλης της επιφάνειας */
+    background-repeat: no-repeat;
 }
 
+/* Κουμπί προηγούμενης εικόνας */
 .slides-navigation a.prev {
-	left: 20px;
-	background-image: url(../img/icons/prev.png);
+    left: 20px;
+    background-image: url(../img/icons/prev.png);
 }
 
+/* Κουμπί επόμενης εικόνας */
 .slides-navigation a.next {
-	right: 20px;
-	background-image: url(../img/icons/next.png);
+    right: 20px;
+    background-image: url(../img/icons/next.png);
 }
+
+/* =========================================
+   4. ΚΕΝΤΡΙΚΟ ΜΗΝΥΜΑ ΑΡΧΙΚΗΣ ΣΕΛΙΔΑΣ
+   ========================================= */
 
 .titleMessage {
-	position: absolute;
+    position: absolute;
     width: 100%;
     height: 250px;
-    top: 50%;
+    top: 50%;                    /* Κάθετο κεντράρισμα */
     z-index: 5;
     text-align: center;
-    margin-top: -125px;
+    margin-top: -125px;          /* Αντιστάθμιση μισού ύψους */
 }
 
+/* Βασική εμφάνιση κειμένων */
 .titleMessage .heading p {
-	color: #fff;
+    color: #fff;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
 }
 
+/* Κεντρικός τίτλος */
 .titleMessage .heading .main {
-	font-size: 50px;
+    font-size: 50px;
 }
 
+/* Δευτερεύων τίτλος */
 .titleMessage .heading .sub {
-	font-size: 23px;
+    font-size: 23px;
 }
+
+/* =========================================
+   5. ΓΕΝΙΚΕΣ ΕΝΟΤΗΤΕΣ
+   ========================================= */
 
 .section {
-	padding: 100px 0;
+    padding: 100px 0;            /* Εσωτερικό κενό πάνω και κάτω */
 }
 
+/* Εικόνα ενότητας About */
 .aboutImage {
-	max-width: 100%;
+    max-width: 100%;             /* Δεν ξεπερνά το διαθέσιμο πλάτος */
 }
+
+/* =========================================
+   6. SKILLS ΚΑΙ CONTACT SECTIONS
+   ========================================= */
 
 .skillsSection,
 .contactSection {
-	background-color: #121212;
-	color: #B8860B;
+    background-color: #121212;
+    color: #B8860B;               /* Χρυσό χρώμα */
 }
 
-.skill{
-	text-align: center;
-	margin-left: 10px; 
+/* Κεντράρισμα κάθε δεξιότητας */
+.skill {
+    text-align: center;
+    margin-left: 10px;
 }
+
+/* Κυκλικό γράφημα δεξιοτήτων */
 .chart {
-	position: relative;
-	width: 152px;
-	height: 152px;
-	display: inline-block;
-	text-align: center;
-	
-}
-.world{
-	text-align: center;
-	color: #B8860B;
-	font-family: 'Inter', sans-serif;
-
-
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
 }
 
+/* Κείμενο ενότητας World */
+.world {
+    text-align: center;
+    color: #B8860B;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Τοποθέτηση canvas πάνω στο γράφημα */
 .chart canvas {
-	position: absolute;
+    position: absolute;
     left: 0;
-	top: 0;
-	
+    top: 0;
 }
+
+/* Ποσοστό μέσα στο κυκλικό γράφημα */
 .chart .percent {
-	color:#fff;
-	line-height: 152px;
-	display: inline-block;
-	font-size: 35px;
-
-} 
-
-.chart .percent:after{
-	content: '%';
+    color: #fff;
+    line-height: 152px;          /* Κάθετο κεντράρισμα */
+    display: inline-block;
+    font-size: 35px;
 }
 
+/* Αυτόματη προσθήκη συμβόλου % */
+.chart .percent:after {
+    content: '%';
+}
+
+/* =========================================
+   7. ΠΛΑΙΣΙΑ ΣΤΑΤΙΣΤΙΚΩΝ (24, 365, 25+, 100%)
+   ========================================= */
+
+/* Εξωτερικό πλαίσιο */
 .squareItem {
-  margin-top: 30px;
-  position: relative;
+    margin-top: 30px;
+    position: relative;
 }
+
+/* Εσωτερικό πλαίσιο */
 .squareInnerContainer {
-	position: relative;
-	padding: 50px 15px 35px;
-	text-align: center;
-	border: 2px solid #121212;
-	border-top: none;
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #121212;
+    border-top: none;            /* Αφαιρεί το επάνω περίγραμμα */
 }
 
-.squareInnerContainer:before, 
+/* Δημιουργία δύο επάνω γραμμών με κενό για το εικονίδιο */
+.squareInnerContainer:before,
 .squareInnerContainer:after {
-	content: '';
-	position: absolute;
-	top: 0px;
-	width: 30%;
-	border-bottom: 2px solid #121212;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 30%;
+    border-bottom: 2px solid #121212;
 }
+
+/* Δεξιά επάνω γραμμή */
 .squareInnerContainer:before {
-	right: 0px;
-
+    right: 0;
 }
+
+/* Αριστερή επάνω γραμμή */
 .squareInnerContainer:after {
-	left: 0px;
-
+    left: 0;
 }
 
+/* Αριθμοί στατιστικών */
 .squareContent h2 {
-	font-size: 56px;
-	margin-bottom: 10px;
-	font-weight: 400;
-	color: #B8860B;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #B8860B;
+}
 
-}
+/* Περιγραφές στατιστικών */
 .squareContent h3 {
-	font-size: 13px;
-	font-weight: 600;
-	margin: 0;
-	text-align: left;
-	
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
 }
+
+/* Εικονίδιο στο επάνω μέρος του πλαισίου */
 .squareIcon {
-	position: absolute;
+    position: absolute;
     left: 50%;
     top: -30px;
     width: 40%;
@@ -166,85 +214,110 @@ body {
     color: #121212;
 }
 
+/* =========================================
+   8. ΚΟΥΜΠΙ ΕΠΙΚΟΙΝΩΝΙΑΣ
+   ========================================= */
+
 .contactButton {
-	color: #B8860B;
+    color: #B8860B;
     padding: 15px 20px;
     display: inline-block;
     margin-top: 20px;
     border: 1px solid #B8860B;
     border-radius: 2px;
-
 }
+
+/* Εφέ όταν περνάει το ποντίκι πάνω από το κουμπί */
 .contactButton:hover {
-	text-decoration: none;
-	color: #B8860B;
-	background-color:white;
+    text-decoration: none;
+    color: #B8860B;
+    background-color: white;
 }
 
+/* =========================================
+   9. ΦΙΛΤΡΑ PORTFOLIO
+   ========================================= */
+
+/* Εμφάνιση κουμπιών κατηγοριών */
 .filter a {
-	color: #121212;
-	border: 1px solid #B8860B;
-	padding: 10px 18px;
-	display: block;
+    color: #121212;
+    border: 1px solid #B8860B;
+    padding: 10px 18px;
+    display: block;
 }
 
+/* Διάταξη φίλτρων */
 .filter li {
-	display: inline-block;
-	padding: 5px
+    display: inline-block;
+    padding: 5px;
 }
 
+/* Επιλεγμένη κατηγορία */
 .filter .current {
-	background-color:#121212;
-	border-color:#B8860B;
-	color: #B8860B;
+    background-color: #121212;
+    border-color: #B8860B;
+    color: #B8860B;
 }
 
+/* Κεντράρισμα ολόκληρης της περιοχής φίλτρων */
 .filter {
-	text-align: center;
-	width: 100%;
+    text-align: center;
+    width: 100%;
 }
+
+/* =========================================
+   10. ΤΙΤΛΟΙ ΕΝΟΤΗΤΩΝ
+   ========================================= */
 
 .section .heading {
-	text-align: center;
-	padding-bottom: 40px;
-	width: 100%;
-	font-family: 'Inter', sans-serif;
-	color:##B8860B;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #B8860B;              /* Διορθώθηκε το διπλό # */
 }
 
+/* =========================================
+   11. PORTFOLIO - ΦΩΤΟΓΡΑΦΙΕΣ ΕΡΓΑΣΙΩΝ
+   ========================================= */
+
+/* Κάθε φωτογραφία βρίσκεται σε ξεχωριστό στοιχείο */
 .items li {
-	display: inline-block;
-	padding: 5px;
+    display: inline-block;
+    padding: 5px;
 }
 
+/* Περιοχή που περιέχει τις φωτογραφίες */
 .itemsContainer {
-	width: 100%;
+    width: 100%;
 }
-/* Σταθερό ύψος συλλογής φωτογραφιών */
+
+/* Σταθερό ελάχιστο ύψος συλλογής φωτογραφιών
+   Μόνο για μεγάλες οθόνες */
 @media (min-width: 992px) {
     #Portfolio .itemsContainer {
         min-height: 650px;
     }
 }
 
+/* Φωτογραφίες portfolio */
 .items li img {
-	width: 100%;
+    width: 100%;
 
-	-webkit-transition: all 0.2s linear, 1s;
-    -moz-transition: all 0.2s linear, 1s;
-    -o-transition: all 0.2s linear, 1s;
-    -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+    /* Ομαλή μετάβαση κατά την αλλαγή μεγέθους */
+    transition: all 0.2s linear;
 }
 
+/* Κάθε μεμονωμένο έργο */
 .items .item {
-	position: relative;
-	display: block;
-	overflow: hidden;
+    position: relative;
+    display: block;
+    overflow: hidden;            /* Κρύβει ό,τι ξεπερνά τα όρια */
 }
 
+/* Περιοχή εικονιδίων πάνω από τη φωτογραφία */
 .items .icons {
-	position: absolute;
+    position: absolute;
     width: 90px;
     height: 40px;
     left: 50%;
@@ -254,174 +327,193 @@ body {
     z-index: 3;
 }
 
+/* Εικονίδια μέσα στα κουμπιά */
 .items .icons i {
-	color: #fff;
+    color: #fff;
     font-size: 20px;
     margin-top: 9px;
 }
 
+/* Κουμπιά ενεργειών φωτογραφίας */
 .items a {
-	width: 40px;
+    width: 40px;
     height: 40px;
-    background-color:#113768;
+    background-color: #113768;
     position: relative;
     display: inline-block;
 
-     -webkit-transition: all 0.2s linear, 0.2s;
-    -moz-transition: all 0.2s linear, 0.2s;
-    -o-transition: all 0.2s linear, 0.2s;
-    -ms-transition: all 0.2s linear, 0.2s;
-    -transition: all 0.2s linear, 0.2s;
+    /* Ομαλή κίνηση των κουμπιών */
+    transition: all 0.2s linear;
 }
 
+/* Σκούρο διαφανές επίπεδο πάνω από τη φωτογραφία */
 .items .imageOverlay {
-	width: 100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
+    left: 0;
+    top: 0;
+    opacity: 0;                  /* Αρχικά αόρατο */
 
-    -webkit-transition: all 0.2s linear, 1s;
-    -moz-transition: all 0.2s linear, 1s;
-    -o-transition: all 0.2s linear, 1s;
-    -ms-transition: all 0.2s linear, 1s;
-    -transition: all 0.2s linear, 1s;
+    /* Ομαλή εμφάνιση του overlay */
+    transition: opacity 0.2s linear;
 }
 
+/* Εμφάνιση overlay όταν περνάει το ποντίκι */
 .items .item:hover .imageOverlay {
-	opacity: 1;
+    opacity: 1;
 }
 
+/* Κουμπί ανοίγματος εικόνας */
 .items .openButton {
-	float: left;
-	left: -200px;
-
-
-
+    float: left;
+    left: -200px;                /* Αρχικά εκτός ορατού χώρου */
 }
 
+/* Κουμπί συνδέσμου έργου */
 .items .projectLink {
-	float: right;
-	right: -200px;
-
+    float: right;
+    right: -200px;               /* Αρχικά εκτός ορατού χώρου */
 }
 
-.items .item:hover .openButton{
-	left: 0px;
-
+/* Εμφάνιση κουμπιού ανοίγματος στο hover */
+.items .item:hover .openButton {
+    left: 0;
 }
 
-.items .item:hover .projectLink{
-	right: 0px;                                                         
-	
+/* Εμφάνιση κουμπιού συνδέσμου στο hover */
+.items .item:hover .projectLink {
+    right: 0;
 }
 
+/* Μεγέθυνση φωτογραφίας κατά το hover */
 .items .item:hover img {
-	 -webkit-transform: scale(1.05, 1.05);
-    -moz-transform: scale(1.05, 1.05);
-    -o-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
-    -transform: scale(1.05, 1.05);
+    transform: scale(1.05);
 }
 
-
-
+/* Αφαίρεση προεπιλεγμένου padding από τη λίστα */
 .items {
-	padding: 0;
-}
-.copyrightSection {
-	background-color:#121212;
-	color: #B8860B;
-	padding: 30px 5px;
-	font-family: 'Calistoga', cursive;
-	
+    padding: 0;
 }
 
-.copyrightSection p {
-	margin: 0;
+/* =========================================
+   12. COPYRIGHT - ΥΠΟΣΕΛΙΔΟ
+   ========================================= */
+
+.copyrightSection {
+    background-color: #121212;
+    color: #B8860B;
+    padding: 30px 5px;
+    font-family: 'Calistoga', cursive;
 }
+
+/* Αφαίρεση περιθωρίου από τις παραγράφους */
+.copyrightSection p {
+    margin: 0;
+}
+
+/* =========================================
+   13. NAVIGATION - ΜΕΝΟΥ ΙΣΤΟΣΕΛΙΔΑΣ
+   ========================================= */
 
 #navigation {
-	background-color:#121212;
-	padding: 20px 10px;
-	z-index: 100;
-	width: 100%;
-   
+    background-color: #121212;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
 }
 
+/* Απόσταση μεταξύ στοιχείων μενού */
 #navigation li {
-	padding: 0 10px;
+    padding: 0 10px;
 }
 
+/* Χρώμα συνδέσμων μενού */
 #navigation li a {
-	color: #B8860B;
+    color: #B8860B;
 }
 
-
+/* Λογότυπο στην μπάρα πλοήγησης */
 .navbar-brand,
 .navbar-brand:hover {
-	color: #B8860B;
+    color: #B8860B;
 }
 
+/* Εικονίδιο μενού σε μικρές οθόνες */
 .navbar-toggler-icon {
-	background: url(../img/icons/menu.png);
-	background-size: 100%;
+    background: url(../img/icons/menu.png);
+    background-size: 100%;
 }
 
+/* Σταθερό μενού όταν ενεργοποιείται η κλάση fixedNav */
 .fixedNav #navigation {
-	position: fixed;
-	top:0;
+    position: fixed;
+    top: 0;
 }
 
+/* =========================================
+   14. LOADER - ΟΘΟΝΗ ΦΟΡΤΩΣΗΣ
+   ========================================= */
+
+/* Καλύπτει ολόκληρη την οθόνη όσο φορτώνει η σελίδα */
 .loader {
-	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 1000;
-
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
+/* Εμφάνιση του GIF φόρτωσης στο κέντρο */
 .loader .inner {
-	width: 100%;
-	height: 100%;
-	background: url(../img/loader.gif) center center no-repeat;
-}
-.logo{
-	text-align: left;
-	color:#B8860B;
-	padding-right:100px ;
-	font-family: 'Calistoga', cursive;
-	
-
-}
-.mylavanda{
-
-	text-align: center;
-	font-family: 'Calistoga', cursive;
-	color: #B8860B;
-}
-.mail{
-	text-align: center;
-	font-family: 'Calistoga', cursive;
-	color: #fff;
-}
-.kxtechical{
-
-	font-family: 'Calistoga', cursive;
+    width: 100%;
+    height: 100%;
+    background: url(../img/loader.gif) center center no-repeat;
 }
 
-.text{
-	
-	font-family: 'Inter', sans-serif;
-	color: #fff;
+/* =========================================
+   15. ΠΡΟΣΩΠΙΚΕΣ ΚΛΑΣΕΙΣ ΓΡΑΜΜΑΤΟΣΕΙΡΩΝ
+   ========================================= */
+
+/* Λογότυπο */
+.logo {
+    text-align: left;
+    color: #B8860B;
+    padding-right: 100px;
+    font-family: 'Calistoga', cursive;
 }
 
-.text1{
-	text-align: left;
-	font-family: 'Inter', sans-serif;
-	color: #121212;
+/* Κεντραρισμένο κείμενο */
+.mylavanda {
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: #B8860B;
+}
+
+/* Κείμενο email */
+.mail {
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: #fff;
+}
+
+/* Βασική γραμματοσειρά Calistoga */
+.kxtechical {
+    font-family: 'Calistoga', cursive;
+}
+
+/* Λευκό κείμενο με γραμματοσειρά Inter */
+.text {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+/* Αριστερά στοιχισμένο σκούρο κείμενο */
+.text1 {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: #121212;
 }
