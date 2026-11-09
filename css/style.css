@@ -188,6 +188,11 @@ body {
 
 /* Αριθμοί στατιστικών */
 .squareContent h2 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 3px;
+
     font-size: 56px;
     margin-bottom: 10px;
     font-weight: 400;
@@ -518,12 +523,6 @@ body {
     color: #121212;
 }
 
-.squareContent h2 {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 3px;
-}
 
 .counterSuffix {
     font-size: 35px;
