@@ -60,11 +60,12 @@ $(document).ready(function () {
 	var skillsTopOffset = $(".skillsSection").offset().top;
 	var statsTopOffset = $(".statsSection").offset().top;
 	var countUpFinished = false;
+	var chartsStarted = false;
 
 
 	$(window).scroll(function () {
 
-		if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+		if (!chartsStarted && window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
 
 			$('.chart').easyPieChart({
 				easing: 'easeInOut',
@@ -77,6 +78,8 @@ $(document).ready(function () {
 					$(this.el).find('.percent').text(Math.round(percent));
 				}
 			});
+
+			chartsStarted = true;
 
 		}
 
