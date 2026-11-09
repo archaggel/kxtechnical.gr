@@ -220,7 +220,12 @@ body {
 .itemsContainer {
 	width: 100%;
 }
-
+/* Σταθερό ύψος συλλογής φωτογραφιών */
+@media (min-width: 992px) {
+    #Portfolio .itemsContainer {
+        min-height: 650px;
+    }
+}
 
 .items li img {
 	width: 100%;
